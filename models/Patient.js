@@ -19,7 +19,7 @@ module.exports = (database) => {
         isEmail: true
     },
     birth: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false
     }
 }, {

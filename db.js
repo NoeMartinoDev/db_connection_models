@@ -19,5 +19,6 @@ Patient.belongsToMany(Doctor, { through: "PatientDoctor" })
 Doctor.belongsToMany(Patient, { through: "PatientDoctor" })
 
 module.exports = {
-    database
+    database,
+    ...database.models
 }
